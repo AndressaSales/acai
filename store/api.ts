@@ -1,152 +1,105 @@
 const potes = ref([
     {
         id: 1,
-        num: "400 ML",
-        preco: "5.50",
-        url: "https://loja.goldfoodservice.com.br/image/cache/catalog/3071-1024x1024.jpg"
+        name: "Copo de 400 ML",
+        descricao: "açai, banana, creme coco, paçoca",
+        preco: "6.50",
+        url: "https://www.imagensempng.com.br/wp-content/uploads/2021/02/Copo-Acai-Png.png"
     },
     {
         id:2,
-        num: "500 ML",
-        preco: "7.50",
-        url: "https://www.luembalagensplasticas.com/_jbloja/imagens/copo%20bolha,%20copo%20da%20felicidade,%20500ml%20com%20tampa%20bolha%20e%20tampa%20rete,%20importadora%20Lu%20Embalagens%20Plasticas%2016%20oz%20fabrica%20China.png"
+        name: "Copo de 400 ML",
+        descricao: "açai, banana, creme coco, morango",
+        preco: "6.50",
+        url: "https://www.designi.com.br/images/preview/10295453.jpg"
     },
     {
         id:3,
-        num:"700 ML",
+        name:" Copo de 500 ML",
+        descricao: "açai, gotas de chocolate, calda de morango, granola, leite condensado",
+        preco: "8.50",
+        url: "https://www.designi.com.br/images/preview/11149681.jpg"
+    },
+    {
+        id: 4,
+        name: "Copo de 500ml",
+        descricao: "açai, morando, kiwi, leite condensado, granola",
+        preco: "8.50",
+        url: "https://www.designi.com.br/images/preview/10005107.jpg"
+    },
+    {
+        id: 5,
+        name: "Copo de 700ml",
+        descricao: "açai, leite condensado, jujubas, gotas de chocolate, paçoca, banana, manga, leite ninho ",
         preco: "10.50",
-        url: "https://89embalagens.com.br/wp-content/uploads/2021/10/copo-descartavel-translucido-700ml.jpg"
-    },
-    {
-        id: 4,
-        num: "1 L",
-        preco: "12.50",
-        url: "https://tse1.mm.bing.net/th?id=OIP.hhSa7F12JLmcA3Npjll5hQHaHa&pid=Api&P=0&h=180"
-    }
-
-])
-
-const frutas = ref([
-    {
-        id: 1,
-        name: "Banana",
-        url: "https://loe.org/content/2014-04-18/10-bananabunch.gif"
-    },
-    {
-        id: 2,
-        name: "Morango",
-        url: "https://omanualdaspapinhas.com/wp-content/uploads/2018/05/10-beneficios-do-morango-para-os-bebes2.jpg"
-    },
-    {
-        id:3,
-        name: "Manga",
-        url: "https://tse2.mm.bing.net/th?id=OIP.D9Q1Mms1nJ4YGZID9E-DlgHaE7&pid=Api&P=0&h=180"
-    },
-    {
-        id:4,
-        name: "Kiwi",
-        url: "https://tse1.mm.bing.net/th?id=OIP.pExcFzRcjCWUvWsR22V8GQHaFi&pid=Api&P=0&h=180"
-    },
-    {
-        id: 5,
-        name: "Abacaxi",
-        url: "http://www.saudedicas.com.br/wp-content/uploads/2015/11/propriedades-do-abacaxi-para-perda-de-peso1.jpg"
+        url: "https://i.pinimg.com/originals/54/59/c1/5459c11b676f91d7fa00e34aa9470302.jpg"
     },
     {
         id: 6,
-        name: "Amora",
-        url: "https://tse2.mm.bing.net/th?id=OIP.iyBTt0nFeEKjJNihGeDOwgHaHa&pid=Api&P=0&h=180"
+        name: "Copo de 700ml",
+        descricao: "açai, creme de amendoim, jujubas, kiwi, farofa de castanhas, lite ninho, leite condensado",
+        preco: "10.50",
+        url: "https://www.designi.com.br/images/preview/10001687.jpg"
     },
     {
         id: 7,
-        name: "uva",
-        url: "https://tse3.mm.bing.net/th?id=OIP.MlKbwOfNHn3UtGefWKE3mQHaHa&pid=Api&P=0&h=180"
-    }
-])
-
-const confeitos = ref([
-    {
-        id: 1,
-        name: "Paçoca",
-        preco: "2.00"
-    },
-    {
-        id: 2,
-        name: "Granola",
-        preco: "2.00"
-    },
-    {
-        id:3,
-        name: "Jujuba",
-        preco: "2.00"
-    },
-    {
-        id: 4,
-        name: "Balas de Goma",
-        preco: "2.00"
-    },
-    {
-        id: 5,
-        name: "Granulado",
-        preco: "2.00"
-    },
-    {
-        id: 6,
-        name: "Leite Condensado",
-        preco: "2.00"
-    },
-    {
-        id: 7,
-        name: "Leite Ninho",
-        preco: "2.00"
+        name: "Copo de 700ml",
+        descricao: "açai, balas de goma, abacaxi, morango, granulado, crene de morango, banana",
+        preco: "10.50",
+        url: "https://www.designi.com.br/images/preview/10068821.jpg"
     },
     {
         id: 8,
-        name: "Farofa de Castanha",
-        preco: "2.00"
+        name: "Pote de 2,2Kg",
+        preco: "15.50",
+        url: "https://www.imagensempng.com.br/wp-content/uploads/2021/02/Acai-Copo-Png.png"
     },
     {
         id: 9,
-        name: "Gotas de Chocolate",
-        preco: "2.00"
+        name: "Tigela de Açai",
+        descricao: "açai, banana, farora de granola, creme de cupuaçu, mamão, leite ninho, gotas de chocolate, castanhas, uvas, creme de banana, granola",
+        preco: "18.50",
+        url: "https://img.freepik.com/fotos-premium/tigela-brasileira-de-acai-com-banana-pacoca-e-morango-isolada-em-fundo-branco_317399-1676.jpg?w=2000"
+    },
+    {
+        id: 10,
+        name: "Tigela de Açai",
+        descricao: "açai, mamão, manga, gotas de chocolate, leite ninho, jujubas, creme de banana, caldsa de chocolate, morango, farofa de castanha",
+        preco: "18.50",
+        url: "https://www.designi.com.br/images/preview/10005022.jpg"
+    },
+    {
+        id: 11,
+        name: "Barca de Açai",
+        descricao: "açai, banana, manga, abacaxi, mamão, gotas de chocolate, morango, paçoca, leite condensado, leite ninho, jujubas, granulado, creme de banana, granola, balas de gomas, uva, kiwi",
+        preco: "60.50",
+        url: "https://i.pinimg.com/originals/e3/0a/33/e30a33e93f810103bdb32ac0c00a7aba.png"
+    },
+    {
+        id: 12,
+        name: "Pote de 1L",
+        preco: "50.50",
+        url: "https://geerresorvetes.com.br/wp-content/uploads/2022/08/ACAI-COM-LEITINHO-1L-1024x798.png"
     }
+
 ])
+
 
 const cart = ref([])
 
 const pedidos = ref([])
 export const api = () =>{
 
-    function addP(pote){
-        /*const incartP = cart.value.some(o => o.id === pote.id)
+    function add(pote){
+        const incartP = cart.value.some(o => o.id === pote.id)
         if(!incartP){
             cart.value.push(pote)
-        }*/
-        cart.value.push(pote)
-    }
-    function addF(fruta){
-        cart.value.push(fruta)
-        /*const incartF = cart.value.some(o => o.id === id)
-        if(!incartF){
-            cart.value.push(fruta)
-        }*/
-    }
-
-    function addC(confeito){
-        const incartC = cart.value.some(o => o.id === confeito.id)
-        if(!incartC){
-            cart.value.push(confeito)
         }
     }
 
     return{
         potes,
-        frutas,
-        confeitos,
-        cart,
-        addP,
-        addF,
-        addC,
-        pedidos
+        pedidos,
+        add
     }
 }

@@ -1,7 +1,7 @@
 <template>
     <div>
         <div>
-            <NuxtImg src="../public/image/banner.jpj" />
+            <NuxtImg src="" />
         </div>
     </div>
 </template>
