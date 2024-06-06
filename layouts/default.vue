@@ -19,7 +19,6 @@
                     class="w-full block flex-grow lg:flex lg:items-center lg:w-auto"
                 >
                     <div class="text-sm lg:flex lg:text-xl text-white">
-                        <NuxtLink class="block mt-4 lg:iniline-block lg:mt-0 hover:text-orange-400 mr-4" to="/about">Sobre</NuxtLink>
                         <NuxtLink class="block mt-4 lg:iniline-block lg:mt-0 hover:text-orange-400 mr-4" to="/menu">Menu</NuxtLink>
                         <NuxtLink class="block mt-4 lg:iniline-block lg:mt-0 hover:text-orange-400 mr-4" to="/pedidos">Pedidos</NuxtLink>
                     </div>

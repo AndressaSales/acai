@@ -91,15 +91,28 @@ const pedidos = ref([])
 export const api = () =>{
 
     function add(pote){
-        const incartP = cart.value.some(o => o.id === pote.id)
+        /*const incartP = cart.value.some(o => o.id === pote.id)
         if(!incartP){
             cart.value.push(pote)
-        }
+        }*/
+        cart.value.push(pote)
     }
+
+    function remove(id){
+        const i = cart.value.findIndex(o => o.id === id)
+        cart.value.splice(i, 1)
+    }
+
+    const total = computed(() => {
+        return cart.value.reduce((acc, pote) => acc + parseFloat(pote.preco), 0).toFixed(2)
+    })
 
     return{
         potes,
         pedidos,
-        add
+        cart,
+        add, 
+        remove,
+        total
     }
 }
