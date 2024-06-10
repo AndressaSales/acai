@@ -26,6 +26,10 @@
                 </div>
         </nav>
         <slot/>
+        <UDivider
+            label="Acaí Brasil"
+            :ui="{ label: 'text-primary-500 dark:text-primary-400' }"
+        />
     </div>
 </template>
 

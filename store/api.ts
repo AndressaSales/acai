@@ -88,22 +88,9 @@ const potes = ref([
 const cart = ref([])
 
 
-const pedidos = ref([
-    {
-        id: 1,
-        "name": "Alex Rider",
-        "pote": [
-            "Copo de 400ML",
-            "barca de Açaí",
-            "Tigela de Açaí"
-        ],
-        "total": "85.5"
-    }
-])
-
 export const api = () =>{
 
-    function add(pote){
+    function adicionar(pote){
         /*const incartP = cart.value.some(o => o.id === pote.id)
         if(!incartP){
             cart.value.push(pote)
@@ -120,16 +107,10 @@ export const api = () =>{
         return cart.value.reduce((acc, pote) => acc + parseFloat(pote.preco), 0).toFixed(2)
     })
 
-
-    function finalizar(){
-       
-    }
-
     return{
         potes,
-        pedidos,
         cart,
-        add, 
+        adicionar, 
         remove,
         total
     }
